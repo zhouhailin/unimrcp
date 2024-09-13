@@ -155,6 +155,13 @@ APT_DECLARE(char*) apt_datadir_filepath_get(const apt_dir_layout_t *dir_layout, 
  */
 APT_DECLARE(char*) apt_vardir_filepath_get(const apt_dir_layout_t *dir_layout, const char *file_name, apr_pool_t *pool);
 
+/**
+ * Compose a file path relative to log dir.
+ * @param dir_layout the directory layout
+ * @param file_name the file name
+ * @param pool the memory pool to use
+ */
+APT_DECLARE(char*) apt_logdir_filepath_get(const apt_dir_layout_t *dir_layout, const char *file_name, apr_pool_t *pool);
 
 APT_END_EXTERN_C
 

@@ -313,3 +313,8 @@ APT_DECLARE(char*) apt_vardir_filepath_get(const apt_dir_layout_t *dir_layout, c
 {
 	return apt_dir_layout_path_compose(dir_layout,APT_LAYOUT_VAR_DIR,file_name,pool);
 }
+
+APT_DECLARE(char*) apt_logdir_filepath_get(const apt_dir_layout_t *dir_layout, const char *file_name, apr_pool_t *pool)
+{
+	return apt_dir_layout_path_compose(dir_layout,APT_LAYOUT_LOG_DIR,file_name,pool);
+}
